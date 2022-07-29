@@ -11,7 +11,7 @@
     command:
 
       - pwd
-      - pip install glibc
+      - pip install --no-index --find-links=ovito-3.3.2-cp38-cp38-manylinux1_x86_64.whl -r
       - python nung.py
      
 
