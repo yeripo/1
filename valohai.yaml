@@ -16,7 +16,7 @@
 
       - ls /tensorflow/
 
-      - nvidia-smi
+      - nvidia-smi -L
 
       - python --version
 
