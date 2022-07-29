@@ -11,6 +11,7 @@
     command:
 
       - pwd
+      - pip install glibc
       - python nung.py
      
 
