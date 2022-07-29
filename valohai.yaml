@@ -1,15 +1,13 @@
 ---
 
 - step:
-    name: tensorflow-check
-    image: valohai/hauki:tensorflow1.4.1-python3.5-opencv3.4-dlib19.8-cuda8.0-cudnn6.0-devel-ubuntu16.04
+    name: tensorflow/tensorflow:2.6.0
     command:
+      - pip install valohai-utils
+      - pip install -r requirements.txt
+      - /usr/bin/python3 -m pip install --upgrade pip
       - pwd
       - lsb_release -a
       - python --version
-      - python -c "import tensorflow; print(tensorflow.__version__);"
-      - python -c "from tensorflow.python.client import device_lib; device_lib.list_local_devices();"
       - nvidia-smi -L
-      - nvcc --version | grep release
-      - cat /usr/include/x86_64-linux-gnu/cudnn_v*.h | grep CUDNN_MAJOR -A 2
       - python nung.py
